@@ -8,11 +8,14 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
+.boton{
+    background-color:#3A71C1;
+    border-radius: 5%;
+}
 body {
-    background-color: #eee;
+    background-color: #A0B9E7;
     color: #4e4544;
-    font: normal 16px sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Page Layout */
@@ -24,12 +27,13 @@ body {
     padding: 0 60px;
 
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 20fr 3fr;
     grid-template-areas: 
         "header header"
         "main sidebar"
         "footer footer";
-    grid-gap: 60px;
+    grid-gap: 100px;
+
 }
 
 /* Header */
@@ -37,7 +41,7 @@ body {
 header{
     grid-area: header;
 
-    color: #ef5350;
+    color: #000000;
     padding: 20px 0;
 
     display: grid;
@@ -75,8 +79,10 @@ header button {
 
 .main {
     grid-area: main;
-    
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+
+
 }
 
 .main h2 {
@@ -97,9 +103,10 @@ header button {
 
 .sidebar {
     grid-area: sidebar;
-
-    border: 1px solid #a2a2a2;
+    background-color: beige;
+    height: 61%;
     padding: 20px;
+
 }
 
 /* Footer */
@@ -107,10 +114,11 @@ header button {
 footer {
     grid-area: footer;
 
-    color: #ef5350;
+    color: #2779a2;
     text-align: center;
     padding: 20px 0;
 }
+
 
 footer p {
     color: #777;
